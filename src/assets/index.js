@@ -1,5 +1,5 @@
-import logo from "./logo.svg";
-import jotasLogo from './jotasLogo.svg';
+
+import jotasLogo from './jotasLogo.png';
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -33,7 +33,6 @@ import tripguide from "./tripguide.png";
 
 export {
   jotasLogo,
-  logo,
   backend,
   creator,
   mobile,

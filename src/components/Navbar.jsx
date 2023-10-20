@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { navLinks } from "../constants";
-import { logo, menu, close, jotasLogo } from "../assets";
+import { menu, close, jotasLogo } from "../assets";
 import { styles } from "../styles";
 
 const Navbar = () => {
@@ -41,7 +41,7 @@ const Navbar = () => {
             window.scrollTo( 0, 0 );
           } }
         >
-          <img src={ jotasLogo } alt='logo' className='w-9 h-9 object-contain' />
+          <img src={ jotasLogo } alt='logo' className='w-14 h-18 object-contain rounded-full' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
             joTas &nbsp;
             <span className='sm:block hidden'> | Portfolio</span>
