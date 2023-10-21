@@ -16,6 +16,7 @@ import {
   nextT,
   testing,
 
+  edx,
   enpa,
   fivana,
   backyard,
@@ -116,7 +117,7 @@ const technologies = [
 const experiences = [
   {
     title: "Frontend Developer",
-    company_name: "enpa",
+    company_name: "enpa Pinar del Río",
     icon: enpa,
     iconBg: "#ffffff",
     date: "Sept 2016 - Sept 2020",
@@ -174,6 +175,19 @@ const experiences = [
       "Developing and maintaining web applications using React.js, Vue.js and other related technologies for being able to handle advertisers.",
       "Collaborating with cross-functional teams including designers, product managers, product owners and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews with other developers.",
+    ],
+  },
+  {
+    title: "Frontend Developer",
+    company_name: "Harvard/edx",
+    icon: edx,
+    iconBg: "#ffffff",
+    date: "Jun 2023 - Jul 2023",
+    points: [
+      "Completed the HarvardX: CS50’s Web Programming with Python and JavaScript course, which is a comprehensive program that dives deep into the design and implementation of web apps.",
+      "Gained hands-on experience with Python, JavaScript, and SQL using frameworks like Django, React, and Bootstrap12.",
+      "Developed a strong understanding of database design, scalability, security, and user experience.",
       "Participating in code reviews with other developers.",
     ],
   },

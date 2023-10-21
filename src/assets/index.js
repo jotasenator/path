@@ -28,6 +28,7 @@ import vueT from "./tech/vue.png";
 import python3 from "./tech/python3.png";
 
 
+import edx from "./company/edx.png";
 import enpa from "./company/enpa.png";
 import fivana from "./company/fivana.png";
 import kimia from "./company/kimia.png";
@@ -64,6 +65,7 @@ export {
   kimia,
   backyard,
   estadio,
+  edx,
 
   github,
   linkedin,
