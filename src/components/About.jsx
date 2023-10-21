@@ -48,9 +48,11 @@ const About = () => {
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
         I'm a frontend developer with experience in JavaScript, TypeScript and Python 3,
-        and I've worked with libraries and frameworks like React.js, Next.js, Vue.js and Django.
+        and I've worked with libraries and frameworks like React.js, Next.js, Vue.js and Django.<br />
+
         Being a team player I like to collaborate closely with the team to create efficient, scalable,
-        and user-friendly solutions that solve real-world problems.
+        and user-friendly solutions that solve real-world problems.<br />
+
         Let's work together to bring ideas to life!
       </motion.p>
 
