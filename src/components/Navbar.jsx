@@ -42,10 +42,7 @@ const Navbar = () => {
           } }
         >
           <img src={ jotasLogo } alt='logo' className='w-14 h-18 object-contain rounded-full' />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            joTas &nbsp;
-            <span className='sm:block hidden'> | Portfolio</span>
-          </p>
+
         </Link>
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>

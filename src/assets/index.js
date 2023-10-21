@@ -5,14 +5,10 @@ import react from './react.png';
 import django from './django.png';
 import vue from './vue.png';
 import next from './next.png';
-import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
 import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
-import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
@@ -21,15 +17,20 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
+import djangoT from "./tech/django.png";
+import testing from "./tech/testing-library.png";
+import nextT from "./tech/next.png";
+import cypress from "./tech/cypress.png";
+import vueT from "./tech/vue.png";
+import python3 from "./tech/python3.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import enpa from "./company/enpa.png";
+import fivana from "./company/fivana.png";
+import kimia from "./company/kimia.png";
+import backyard from "./company/backyard.png";
+import estadio from "./company/estadio.png";
+
 
 export {
   jotasLogo,
@@ -37,13 +38,9 @@ export {
   next,
   vue,
   django,
-  github,
   menu,
   close,
   css,
-  docker,
-  figma,
-  git,
   html,
   javascript,
   mongodb,
@@ -52,11 +49,16 @@ export {
   redux,
   tailwind,
   typescript,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  djangoT,
+  vueT,
+  cypress,
+  nextT,
+  testing,
+  python3,
+
+  enpa,
+  fivana,
+  kimia,
+  backyard,
+  estadio,
 };
