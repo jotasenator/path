@@ -179,7 +179,7 @@ const experiences = [
     ],
   },
   {
-    title: "Frontend Developer",
+    title: "Django Developer",
     company_name: "Harvard/edx",
     icon: edx,
     iconBg: "#ffffff",
