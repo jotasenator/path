@@ -114,7 +114,7 @@ const Contact = () => {
           onSubmit={ handleSubmit }
           className='mt-12 flex flex-col gap-8'
         >
-          <label className='flex flex-col'>
+          <label className='flex flex-col z-50' >
             <span className='text-white font-medium mb-4'>Your Name</span>
             <input
               type='text'
@@ -125,7 +125,7 @@ const Contact = () => {
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
-          <label className='flex flex-col'>
+          <label className='flex flex-col z-50'>
             <span className='text-white font-medium mb-4'>Your Email</span>
             <input
               type='email'
@@ -136,7 +136,7 @@ const Contact = () => {
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
-          <label className='flex flex-col'>
+          <label className='flex flex-col z-50'>
             <span className='text-white font-medium mb-4'>Your Message</span>
             <textarea
               rows={ 7 }
