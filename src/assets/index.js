@@ -1,9 +1,10 @@
 
 import jotasLogo from './jotasLogo.png';
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
+
+import react from './react.png';
+import django from './django.png';
+import vue from './vue.png';
+import next from './next.png';
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -33,10 +34,10 @@ import tripguide from "./tripguide.png";
 
 export {
   jotasLogo,
-  backend,
-  creator,
-  mobile,
-  web,
+  react,
+  next,
+  vue,
+  django,
   github,
   menu,
   close,
