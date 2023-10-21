@@ -8,6 +8,9 @@ import next from './next.png';
 import menu from "./menu.svg";
 import close from "./close.svg";
 
+import github from "./github.png";
+import linkedin from "./linkedin.png";
+
 import css from "./tech/css.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
@@ -61,4 +64,7 @@ export {
   kimia,
   backyard,
   estadio,
+
+  github,
+  linkedin,
 };

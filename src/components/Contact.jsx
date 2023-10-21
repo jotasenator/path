@@ -7,6 +7,9 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+import { github, linkedin } from "../assets";
+import { links } from "../constants";
+
 const Contact = () => {
   const formRef = useRef();
   const [ form, setForm ] = useState( {
@@ -64,6 +67,15 @@ const Contact = () => {
       );
   };
 
+  const { github_link, linkedin_link } = links;
+
+  const handleLinkClick = ( url ) => {
+    let newTab = window.open();
+    newTab.opener = null;
+    newTab.location = url;
+  };
+
+
   return (
     <div
       className={ `xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden` }
@@ -72,6 +84,28 @@ const Contact = () => {
         variants={ slideIn( "left", "tween", 0.2, 1 ) }
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
+        <div className='absolute inset-0 flex gap-1 justify-end m-3 card-img_hover'>
+          <div
+            onClick={ () => handleLinkClick( github_link ) }
+            className='bg-black w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+          >
+            <img
+              src={ github }
+              alt='github'
+              className='w-1/2 h-1/2 object-contain'
+            />
+          </div>
+          <div
+            onClick={ () => handleLinkClick( linkedin_link ) }
+            className='bg-white w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+          >
+            <img
+              src={ linkedin }
+              alt='linkedin'
+              className='w-1/2 h-1/2 object-contain'
+            />
+          </div>
+        </div>
         <p className={ styles.sectionSubText }>Get in touch</p>
         <h3 className={ styles.sectionHeadText }>Contact.</h3>
 
@@ -98,7 +132,7 @@ const Contact = () => {
               name='email'
               value={ form.email }
               onChange={ handleChange }
-              placeholder="contacto@gmail.com?"
+              placeholder="username@gmail.com?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>

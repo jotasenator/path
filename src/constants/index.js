@@ -179,4 +179,9 @@ const experiences = [
   },
 ];
 
-export { services, technologies, experiences };
+const links = {
+  github_link: 'https://github.com/jotasenator',
+  linkedin_link: 'https://www.linkedin.com/in/maykel-contreras-camacho-7a1545110/'
+};
+
+export { services, technologies, experiences, links };
