@@ -31,8 +31,8 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "path",
+    title: "Path",
   },
   {
     id: "contact",
@@ -191,7 +191,7 @@ const experiences = [
       "Participating in code reviews with other developers.",
     ],
   },
-];
+].reverse();
 
 const links = {
   github_link: 'https://github.com/jotasenator',
