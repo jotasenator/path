@@ -4,10 +4,15 @@ import { navLinks } from "../constants";
 import { menu, close, jotasLogo } from "../assets";
 import { styles } from "../styles";
 
+import { useTranslation } from "react-i18next";
+import { ButtonI18n } from "./Buttons";
+
 const Navbar = () => {
   const [ active, setActive ] = useState( "" );
   const [ toggle, setToggle ] = useState( false );
   const [ scrolled, setScrolled ] = useState( false );
+
+  const { t } = useTranslation( "global" );
 
   useEffect( () => {
     const handleScroll = () => {
@@ -25,6 +30,7 @@ const Navbar = () => {
 
     return () => window.removeEventListener( "scroll", handleScroll );
   }, [] );
+
 
   return (
     <nav
@@ -45,6 +51,12 @@ const Navbar = () => {
 
         </Link>
 
+        <ul className=" flex gap-1 scale-150">
+          <ButtonI18n flagIcon={ <i>🇬🇧</i> } iso639_1={ "en" } />
+          <ButtonI18n flagIcon={ <i>🇵🇹</i> } iso639_1={ "pt" } />
+          <ButtonI18n flagIcon={ <i>🇪🇸</i> } iso639_1={ "es" } />
+        </ul>
+
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           { navLinks.map( ( { id, title } ) => (
             <li
@@ -53,14 +65,15 @@ const Navbar = () => {
                 } hover:text-white text-[18px] font-medium cursor-pointer` }
               onClick={ () => setActive( title ) }
             >
-              <a href={ `#${ id }` }>{ title }</a>
+              <a href={ `#${ id }` }>{ t( title ) }</a>
             </li>
           ) ) }
         </ul>
 
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
+        <div className='sm:hidden flex justify-end items-center'>
           <img
             src={ toggle ? close : menu }
+            key={ toggle ? close : menu }
             alt='menu'
             className='w-[28px] h-[28px] object-contain'
             onClick={ () => setToggle( !toggle ) }

@@ -12,7 +12,10 @@ import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
+import { useTranslation } from "react-i18next";
+
 const ExperienceCard = ( { experience } ) => {
+  const { t } = useTranslation( "global" );
   return (
     <VerticalTimelineElement
       contentStyle={ {
@@ -20,7 +23,7 @@ const ExperienceCard = ( { experience } ) => {
         color: "#fff",
       } }
       contentArrowStyle={ { borderRight: "7px solid  #232631" } }
-      date={ experience.date }
+      date={ t( experience.date ) }
       iconStyle={ { background: experience.iconBg } }
       icon={
         <div className='flex justify-center items-center w-full h-full'>
@@ -33,7 +36,7 @@ const ExperienceCard = ( { experience } ) => {
       }
     >
       <div>
-        <h3 className='text-white text-[24px] font-bold'>{ experience.title }</h3>
+        <h3 className='text-white text-[24px] font-bold'>{ t( experience.title ) }</h3>
         <p
           className='text-secondary text-[16px] font-semibold'
           style={ { margin: 0 } }
@@ -48,7 +51,7 @@ const ExperienceCard = ( { experience } ) => {
             key={ `experience-point-${ index }` }
             className='text-white-100 text-[14px] pl-1 tracking-wider'
           >
-            { point }
+            { t( point ) }
           </li>
         ) ) }
       </ul>
