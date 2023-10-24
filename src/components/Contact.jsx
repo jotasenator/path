@@ -36,9 +36,9 @@ const Contact = () => {
 
   const handleSubmit = ( e ) => {
     e.preventDefault();
-    form.message !== "" && setLoading( true );
+    setLoading( true );
 
-    form.message !== "" && emailjs
+    emailjs
       .send(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
@@ -78,6 +78,8 @@ const Contact = () => {
     newTab.opener = null;
     newTab.location = url;
   };
+
+  const isMessageEmpty = form.message === '';
 
 
   return (
@@ -153,7 +155,8 @@ const Contact = () => {
 
           <button
             type='submit'
-            className='bg-tertiary py-3 px-8 rounded-xl  z-50 outline-none w-fit text-white font-bold shadow-md shadow-primary'
+            disabled={ isMessageEmpty }
+            className={ `bg-tertiary py-3 px-8 rounded-xl  z-50 outline-none w-fit text-white font-bold shadow-md shadow-primary ${ isMessageEmpty && 'cursor-not-allowed' }` }
           >
             { loading ? t( "contact.p6" ) : t( "contact.p7" ) }
           </button>
