@@ -51,7 +51,7 @@ const Navbar = () => {
 
         </Link>
 
-        <ul className=" flex gap-1 scale-150 bg-slate-800 rounded p-1">
+        <ul className=" flex gap-1 scale-150 bg-slate-800 rounded px-2">
           <ButtonI18n flagIcon={ <i>🇵🇹</i> } iso639_1={ "pt" } />
           <ButtonI18n flagIcon={ <i>🇪🇸</i> } iso639_1={ "es" } />
           <ButtonI18n flagIcon={ <i>🇩🇪</i> } iso639_1={ "de" } />
