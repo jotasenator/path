@@ -8,7 +8,7 @@ const ButtonI18n = ( { flagIcon, iso639_1 } ) => {
         localStorage.setItem( 'language', iso639_1 );
     };
     return (
-        <button type="button" onClick={ handleAction }>
+        <button type="button" onClick={ handleAction } >
             { flagIcon }
         </button>
     );
