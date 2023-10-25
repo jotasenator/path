@@ -183,7 +183,7 @@ const experiences = [
     company_name: "Harvard/edx",
     icon: edx,
     iconBg: "#ffffff",
-    date: "experiences.date",
+    date: "experiences.date1",
     points: [
       "experiences.points1-a",
       "experiences.points1-b",
