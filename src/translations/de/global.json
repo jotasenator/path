@@ -34,6 +34,8 @@
         "alert-error":"Ahh, etwas ist schief gelaufen. Bitte versuchen Sie es erneut."
     },
     "experiences":{
+        "p1":"Was ich bisher gemacht habe",
+        
         "title1":"Django Entwickler",
         "date1":"Juni 2023 - Juli 2023",
         "points1-a":"Abschluss des Kurses HarvardX: CS50's Web Programming with Python and JavaScript, ein umfassendes Programm, das tief in das Design und die Implementierung von Webanwendungen eintaucht.",

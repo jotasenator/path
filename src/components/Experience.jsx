@@ -60,12 +60,13 @@ const ExperienceCard = ( { experience } ) => {
 };
 
 const Experience = () => {
+  const { t } = useTranslation( "global" );
   return (
     <>
       <motion.div variants={ textVariant() }>
 
         <h2 className={ `${ styles.sectionHeadText } text-center` }>
-          What I have done so far.
+          { t( "experiences.p1" ) }
         </h2>
       </motion.div>
 

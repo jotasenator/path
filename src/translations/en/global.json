@@ -34,6 +34,8 @@
         "alert-error":"Ahh, something went wrong. Please try again."
     },
     "experiences":{
+         "p1":"What I have done so far",
+
         "title1":"Django Developer",
         "date1":"Jun 2023 - Jul 2023",
         "points1-a":"Completed the HarvardX: CS50’s Web Programming with Python and JavaScript course, which is a comprehensive program that dives deep into the design and implementation of web apps.",

@@ -34,6 +34,8 @@
         "alert-error": "Ahh, algo correu mal. Por favor, tente novamente."
     },
     "experiences":{
+        "p1": "O que eu fiz até agora",
+        
         "title1": "Desenvolvedor Django",
         "data1": "Jun 2023 - Jul 2023",
         "points1-a": "Concluiu o curso HarvardX: CS50's Web Programming with Python and JavaScript, que é um programa abrangente que mergulha profundamente na conceção e implementação de aplicações web.",
