@@ -95,7 +95,7 @@ const Navbar = () => {
                     setActive( title );
                   } }
                 >
-                  <a href={ `#${ id }` }>{ title }</a>
+                  <a href={ `#${ id }` }>{ t( title ) }</a>
                 </li>
               ) ) }
             </ul>
