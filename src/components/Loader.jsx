@@ -11,6 +11,7 @@ const CanvasLoader = () => {
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "column",
+        paddingTop: "10px",
       } }
     >
       <span className='canvas-loader'></span>
