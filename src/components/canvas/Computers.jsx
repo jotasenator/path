@@ -1,14 +1,26 @@
-import React, { Suspense, useEffect, useState } from "react";
-import { Canvas } from "@react-three/fiber";
+import React, { Suspense, useEffect, useState, useRef } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
+import { Clock } from "three";
+
 const Computers = ( { isMobile } ) => {
   const computer = useGLTF( "./desktop_pc/scene.gltf" );
+  const mesh = useRef();
+  const clock = new Clock();
+
+  useFrame( () => {
+    if ( mesh.current )
+    {
+      let angle = 3 * ( Math.PI / 180 ); // Convert 10 degrees to radians
+      mesh.current.rotation.y = angle * Math.sin( clock.getElapsedTime() );
+    }
+  } );
 
   return (
-    <mesh>
+    <mesh ref={ mesh }>
       <hemisphereLight intensity={ 0.15 } groundColor='black' />
       <spotLight
         position={ [ -20, 50, 10 ] }
@@ -55,7 +67,7 @@ const ComputersCanvas = () => {
 
   return (
     <Canvas
-      frameloop='demand'
+      frameloop='always'
       shadows
       dpr={ [ 1, 2 ] }
       camera={ { position: [ 20, 3, 5 ], fov: 25 } }
