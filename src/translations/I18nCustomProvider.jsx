@@ -7,7 +7,6 @@ import global_pt from "./pt/global.json";
 import global_de from "./de/global.json";
 
 const browserLanguage = navigator.language.split( '-' )[ 0 ];
-console.log( browserLanguage );
 
 
 i18next
