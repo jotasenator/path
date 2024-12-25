@@ -16,6 +16,7 @@ import {
   nextT,
   testing,
 
+  agap2it,
   edx,
   enpa,
   fivana,
@@ -189,6 +190,18 @@ const experiences = [
       "experiences.points1-b",
       "experiences.points1-c",
       "experiences.points1-d",
+    ],
+  },
+  {
+    title: "experiences.title7",
+    company_name: "Agap2IT/Natixis",
+    icon: agap2it,
+    iconBg: "#ffffff",
+    date: "experiences.date7",
+    points: [
+      "experiences.points7-a",
+      "experiences.points7-b",
+      "experiences.points7-c",
     ],
   },
 ].reverse();

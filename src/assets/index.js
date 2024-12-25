@@ -28,6 +28,7 @@ import vueT from "./tech/vue.png";
 import python3 from "./tech/python3.png";
 
 
+import agap2it from "./company/agap2it.png";
 import edx from "./company/edx.png";
 import enpa from "./company/enpa.png";
 import fivana from "./company/fivana.png";
@@ -66,6 +67,7 @@ export {
   backyard,
   estadio,
   edx,
+  agap2it,
 
   github,
   linkedin,

@@ -36,6 +36,12 @@
     "experiences":{
         "p1": "O que eu fiz até agora",
 
+        "title7":"Desenvolvedor Frontend",
+        "date7":"Jun 2024 - ...",
+        "points7-a":"Desenvolvimento e manutenção de aplicações web utilizando Vue.js para o cliente Natixis",
+        "points7-b":"Colaborar com equipas multifuncionais, incluindo desenhadores, gestores de produtos, proprietários de produtos e outros programadores, para criar produtos de alta qualidade.",
+        "points7-c":"Participar em revisões de código com outros programadores.",
+
         "title1": "Desenvolvedor Django",
         "date1": "Jun 2023 - Jul 2023",
         "points1-a": "Concluiu o curso HarvardX: CS50's Web Programming with Python and JavaScript, que é um programa abrangente que mergulha profundamente na conceção e implementação de aplicações web.",

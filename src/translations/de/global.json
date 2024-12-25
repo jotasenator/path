@@ -35,6 +35,12 @@
     },
     "experiences":{
         "p1":"Was ich bisher gemacht habe",
+
+        "title7":"Frontend Entwickler",
+        "date7":"Jun 2024 - ...",
+        "points7-a":"Entwicklung und Wartung von Webanwendungen mit Vue.js für Natixis",
+        "points7-b":"Arbeiten Sie mit funktionsübergreifenden Teams zusammen, darunter Designer, Produktmanager, Produktbesitzer und andere Entwickler, um qualitativ hochwertige Produkte zu erstellen.",        
+        "points7-c":"Teilnahme an Code-Reviews mit anderen Entwicklern.",
         
         "title1":"Django Entwickler",
         "date1":"Jun 2023 - Jul 2023",
